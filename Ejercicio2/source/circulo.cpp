@@ -1,4 +1,4 @@
-#include "circulo.h"
+#include "../include/circulo.h"
 
 Circulo::Circulo(): centro(0,0) , radio(1){} 
 Circulo::Circulo(double x, double y, double r): centro(x,y) , radio(r){}

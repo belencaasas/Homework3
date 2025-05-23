@@ -1,4 +1,4 @@
-#include "elipse.h"
+#include "../include/elipse.h"
 
 Elipse::Elipse(): centro(0,0) , a(1) , b(1) {}
 Elipse::Elipse(double x, double y, double a, double b): centro(x,y) , a(a) , b(b) {}

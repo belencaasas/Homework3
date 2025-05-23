@@ -1,5 +1,4 @@
-#include "rectangulo.h"
-
+#include "../include/rectangulo.h"
 
 Rectangulo::Rectangulo(): verticeIzqInferios(0,0) , ancho(1) , largo(1) {}
 Rectangulo::Rectangulo(double x, double y, double ancho, double largo): verticeIzqInferios(x,y), ancho(ancho), largo(largo) {}

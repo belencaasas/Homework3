@@ -1,7 +1,7 @@
 #pragma once 
-#include "../archivosH/elipse.h"
-#include "../archivosH/circulo.h"
-#include "../archivosH/rectangulo.h" 
+#include "elipse.h"
+#include "circulo.h"
+#include "rectangulo.h" 
 #include <cmath>
 
 template<typename T> 

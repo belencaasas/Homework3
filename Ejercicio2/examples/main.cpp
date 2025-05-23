@@ -1,9 +1,9 @@
 using namespace std; 
 #include <iostream>
-#include "ProcesadorFigura.h"
-#include "../archivosH/circulo.h"
-#include "../archivosH/elipse.h"
-#include "../archivosH/rectangulo.h"
+#include "../include/ProcesadorFigura.h"
+#include "../include/circulo.h"
+#include "../include/elipse.h"
+#include "../include/rectangulo.h"
 
 int main(){
     int opcion = 0; 
@@ -24,8 +24,10 @@ int main(){
 
             case 1: {
                 double x,y,r; 
-                cout << "Ingrese la posicion del centro (x,y): ";
-                cin >> x >> y;
+                cout << "Ingrese la posicion del centro (x): " << endl;
+                cin >> x ;
+                cout << "Ingrese la posicion del centro (y): " << endl;
+                cin >> y;
 
                 do{
                     cout << "Ingrese el radio: ";
@@ -42,23 +44,25 @@ int main(){
 
             case 2: {
                 double x,y,a,b; 
-                cout << "Ingrese la posicion del centro(x,y): ";
-                cin >> x >> y; 
+                cout << "Ingrese la posicion del centro(x): " << endl ;
+                cin >> x;
+                cout << "Ingrese la posicion del centro (y): " << endl;
+                cin >> y; 
 
                 do {
-                    cout << "Ingrese el semieje mayor (a): "; 
+                    cout << "Ingrese el semieje mayor (a): ";  
                     cin >> a; 
                     cout << "Ingrese el semieje menor (b): ";
                     cin >> b;
 
                     if (a <= b){
-                        cout << "El semieje (a) debe ser mayor al semieje (b).";
+                        cout << "El semieje (a) debe ser mayor al semieje (b). Vuelve a ingresar los datos. " << endl;
                     }
                     else if (a <= 0 || b <= 0){
                         cout << "Los semiejes deben ser mayores a 0." << endl;
                     }
                     else if(a == b){
-                        cout << "a y b no deben ser iguales ya que no seria un elipse." << endl;
+                        cout << "a y b no deben ser iguales ya que no seria un elipse." << endl; //PREGUNTAR
                     }
                 } while (a <= b ||a <= 0 || b <= 0 || a == b);
 
@@ -70,8 +74,10 @@ int main(){
 
             case 3: {
                 double x,y,ancho,largo; 
-                cout << "Ingrese la posicion del vertice inferior izquierdo (x,y): ";
-                cin >> x >> y;
+                cout << "Ingrese la posicion del vertice inferior izquierdo (x): " << endl;
+                cin >> x;
+                cout << "Ingrese la posicion del vertice inferior izquierdo (y): " << endl;
+                cin >> y; 
 
                 do{
                     cout << "Ingrese el ancho: "; 
@@ -94,7 +100,7 @@ int main(){
 
 
             case 4: {
-                cout << "Saliendo del programa.." << endl; 
+                cout << "Saliendo del programa..." << endl; 
                 break;
             }
 
