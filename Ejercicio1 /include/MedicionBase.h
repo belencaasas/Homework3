@@ -9,7 +9,7 @@ class MedicionBase{
     public: 
         MedicionBase();
         MedicionBase(float tiempo);
-        MedicionBase(const MedicionBase& other); //copia manual
+        MedicionBase(const MedicionBase& other); 
         MedicionBase& operator=(const MedicionBase& other);
 
         virtual void serializar(ofstream&) const = 0;

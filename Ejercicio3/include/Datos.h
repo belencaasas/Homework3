@@ -8,8 +8,10 @@ using namespace std;
 template <typename T> 
 class Datos{
 public: 
+    Datos() = default; 
     vector<T> datos;
-    
     void agregar(const T& dato);
+    string formatear();
+
 }; 
 
