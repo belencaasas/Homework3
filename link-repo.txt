@@ -1,1 +1,3 @@
-https://github.com/belencaasas/Homework3
+https://github.com/belencaasas/Homework3 
+
+Para correre los ejercicios tenes que moverte al directorio que queres, y correlo con make  
